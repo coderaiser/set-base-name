@@ -1,23 +1,19 @@
 {
-  "name": "set-name",
+  "name": "set-base-name",
   "version": "1.0.0",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
-  "description": "set a new base nam (part of name before extension) to a file",
+  "description": "set a new base name (part of name before extension) to a file",
   "homepage": "http://github.com/",
-  "main": "lib/setname.js",
-  "type": "module",
+  "main": "./lib/set-base-name.js",
+  "exports": "./lib/set-base-name.js",
+  "type": "commonjs",
   "repository": {
     "type": "git",
-    "url": "git://github.com/iocmd/hold-up.git"
+    "url": "git://github.com/coderaiser/set-base-name.git"
   },
   "keywords": [
-    "timeout",
-    "interval",
-    "promise",
-    "async",
-    "await",
-    "try-catch",
-    "try"
+    "basename",
+    "file"
   ],
   "scripts": {
     "test": "madrun test",
@@ -33,26 +29,27 @@
     "watch:coverage:tape": "madrun watch:coverage:tape",
     "watch:coverage": "madrun watch:coverage"
   },
-  "dependencies": {
-    "try-to-catch": "^3.0.0"
-  },
+  "dependencies": {},
   "license": "MIT",
   "devDependencies": {
-    "@cloudcmd/stub": "^2.3.1",
-    "@std/esm": "^0.26.0",
+    "@cloudcmd/stub": "^2.3.4",
     "c8": "^7.1.0",
     "coveralls": "^3.0.2",
     "eslint": "^6.1.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-putout": "^3.0.0",
+    "jest": "^25.4.0",
     "madrun": "^5.0.0",
+    "mock-require": "^3.0.3",
     "nodemon": "^2.0.2",
     "putout": "^7.0.2",
     "redrun": "^7.0.0",
-    "supertape": "^1.2.3"
+    "runsome": "^1.0.0",
+    "supertape": "^1.2.3",
+    "try-catch": "^3.0.0"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "publishConfig": {
     "access": "public"

@@ -1,6 +1,7 @@
-test
 yarn-error.log
+test
 .*
+*.spec.js
 
 *.swp
 coverage
