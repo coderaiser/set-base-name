@@ -4,6 +4,9 @@
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "set a new base name (part of name before extension) to a file",
   "homepage": "http://github.com/",
+  "bin": {
+    "set-base-name": "./bin/set-base-name"
+  },
   "main": "./lib/set-base-name.js",
   "exports": "./lib/set-base-name.js",
   "type": "commonjs",
