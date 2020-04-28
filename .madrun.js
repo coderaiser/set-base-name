@@ -4,7 +4,7 @@ const {run} = require('madrun');
 
 module.exports = {
     'test': () => `tape 'test/**/*.js' 'lib/**/*.spec.js'`,
-    'coverage': () => `c8 ${run('test')}`,
+    'coverage': () => `nyc ${run('test')}`,
     'lint': () => 'putout lib test .madrun.js',
     'fix:lint': () => run('lint', '--fix'),
     'report': () => 'nyc report --reporter=text-lcov | coveralls',

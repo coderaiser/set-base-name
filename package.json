@@ -36,7 +36,6 @@
   "license": "MIT",
   "devDependencies": {
     "@cloudcmd/stub": "^2.3.4",
-    "c8": "^7.1.0",
     "coveralls": "^3.0.2",
     "eslint": "^6.1.0",
     "eslint-plugin-node": "^11.0.0",
@@ -45,6 +44,7 @@
     "madrun": "^5.0.0",
     "mock-require": "^3.0.3",
     "nodemon": "^2.0.2",
+    "nyc": "^15.0.1",
     "putout": "^7.0.2",
     "redrun": "^7.0.0",
     "runsome": "^1.0.0",
