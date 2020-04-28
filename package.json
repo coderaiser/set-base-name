@@ -32,7 +32,9 @@
     "watch:coverage:tape": "madrun watch:coverage:tape",
     "watch:coverage": "madrun watch:coverage"
   },
-  "dependencies": {},
+  "dependencies": {
+    "glob": "^7.1.6"
+  },
   "license": "MIT",
   "devDependencies": {
     "@cloudcmd/stub": "^2.3.4",
@@ -52,7 +54,7 @@
     "try-catch": "^3.0.0"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=10.17.0"
   },
   "publishConfig": {
     "access": "public"
