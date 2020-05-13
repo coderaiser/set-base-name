@@ -1,6 +1,6 @@
 {
   "name": "set-base-name",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "set a new base name (part of name before extension) to a file",
   "homepage": "http://github.com/",
