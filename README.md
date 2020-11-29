@@ -24,25 +24,24 @@ import setBaseName from 'set-base-name';
 
 setBaseName('index', 'hello.js');
 // returns
-'index.js'
+'index.js';
 
 setBaseName('index', 'hello.spec.js');
 // returns
-'index.spec.js'
+'index.spec.js';
 ```
 
 ## License
 
 MIT
 
-[NPMIMGURL]:                https://img.shields.io/npm/v/set-base-name.svg?style=flat
-[BuildStatusIMGURL]:        https://travis-ci.com/coderaiser/set-base-name.svg?branch=master
-[DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/set-base-name.svg?style=flat
-[LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
-[NPMURL]:                   https://npmjs.org/package/set-base-name "npm"
-[BuildStatusURL]:           https://travis-ci.com/coderaiser/set-base-name  "Build Status"
-[DependencyStatusURL]:      https://david-dm.org/coderaiser/set-base-name "Dependency Status"
-[LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
-
-[CoverageURL]:              https://coveralls.io/github/coderaiser/set-base-name?branch=master
-[CoverageIMGURL]:           https://coveralls.io/repos/coderaiser/set-base-name/badge.svg?branch=master&service=github
+[NPMIMGURL]: https://img.shields.io/npm/v/set-base-name.svg?style=flat
+[BuildStatusIMGURL]: https://travis-ci.com/coderaiser/set-base-name.svg?branch=master
+[DependencyStatusIMGURL]: https://img.shields.io/david/coderaiser/set-base-name.svg?style=flat
+[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
+[NPMURL]: https://npmjs.org/package/set-base-name "npm"
+[BuildStatusURL]: https://travis-ci.com/coderaiser/set-base-name "Build Status"
+[DependencyStatusURL]: https://david-dm.org/coderaiser/set-base-name "Dependency Status"
+[LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
+[CoverageURL]: https://coveralls.io/github/coderaiser/set-base-name?branch=master
+[CoverageIMGURL]: https://coveralls.io/repos/coderaiser/set-base-name/badge.svg?branch=master&service=github

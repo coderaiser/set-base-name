@@ -4,8 +4,8 @@ const {run} = require('madrun');
 
 module.exports = {
     'test': () => `tape 'test/**/*.js' 'lib/**/*.spec.js'`,
-    'coverage': () => `nyc ${run('test')}`,
-    'lint': () => 'putout lib test .madrun.js',
+    'coverage': async () => `nyc ${await run('test')}`,
+    'lint': () => 'putout .',
     'fix:lint': () => run('lint', '--fix'),
     'report': () => 'nyc report --reporter=text-lcov | coveralls',
     'watcher': () => 'nodemon -w test -w lib --exec',
