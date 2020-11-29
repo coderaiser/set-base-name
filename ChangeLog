@@ -1,3 +1,14 @@
+2020.11.29, v1.0.3
+
+fix:
+- (set-base-name) rm unused index.js
+
+feature:
+- (package) putout v11.12.0
+- (package) eslint-plugin-putout v6.8.1
+- (package) madrun v8.0.0
+
+
 2020.05.13, v1.0.2
 
 fix:
