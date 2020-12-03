@@ -1,10 +1,9 @@
-'use strict';
+import {join, dirname} from 'path';
 
-const {join} = require('path');
+import runsome from 'runsome';
+import test from 'supertape';
 
-const runsome = require('runsome');
-const test = require('supertape');
-
+const __dirname = dirname(import.meta.url).replace('file:/', '');
 const cli = join(__dirname, '..', 'bin', 'set-base-name.js');
 const run = runsome(cli);
 

@@ -1,19 +1,22 @@
-'use strict';
+import {run} from 'madrun';
 
-const {run} = require('madrun');
+const NODE_OPTIONS = `'--loader mock-import'`;
 
-module.exports = {
-    'test': () => `tape 'test/**/*.js' 'lib/**/*.spec.js'`,
-    'coverage': async () => `nyc ${await run('test')}`,
+export default {
+    'test:base': () => `tape 'test/**/*.js' 'lib/**/*.spec.js'`,
+    'test': () => run('test:base', '', {
+        NODE_OPTIONS,
+    }),
+    'coverage:base': async () => `c8 --exclude=lib/*.spec.js ${await run('test:base')}`,
+    'coverage': async () => run('coverage:base', '', {
+        NODE_OPTIONS,
+    }),
     'lint': () => 'putout .',
     'fix:lint': () => run('lint', '--fix'),
     'report': () => 'nyc report --reporter=text-lcov | coveralls',
     'watcher': () => 'nodemon -w test -w lib --exec',
-    'watch:test': () => run('watcher', 'npm test'),
-    'watch:lint': () => run('watcher', '\'npm run lint\''),
-    'watch:tape': () => 'nodemon -w test -w lib --exec tape',
-    'watch:coverage:base': () => run('watcher', 'nyc npm test'),
-    'watch:coverage:tape': () => run('watcher', 'nyc tape'),
-    'watch:coverage': () => 'bin/redrun.js watch:coverage:base',
+    'watch:test': () => run('watcher', 'npm test:base', {
+        NODE_OPTIONS,
+    }),
 };
 
